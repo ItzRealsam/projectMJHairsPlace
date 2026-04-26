@@ -43,11 +43,31 @@
         <line x1="7" y1="17" x2="17" y2="7"></line>
         <polyline points="7 7 17 7 17 17"></polyline>
       </symbol>
+
+      <symbol id="icon-menu" 
+        fill="none" 
+        stroke="currentColor"
+        stroke-width="2" 
+        stroke-linecap="round" 
+        stroke-linejoin="round"
+        viewBox="0 0 24 24">
+
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <line x1="3" y1="12" x2="21" y2="12"></line>
+        <line x1="3" y1="18" x2="21" y2="18"></line>
+      </symbol>
     </svg>
 
     <header class="header">
       <nav class="nav container">
-        <div class="nav__logo">MJ HAIR PLACE</div>
+        <div class="nav__brand">
+          <div class="nav__logo">MJ HAIR PLACE</div>
+          <div class="nav__menu">
+            <svg class="nav__menu--icon">
+              <use href="#icon-menu"></use>
+            </svg>
+          </div>
+        </div>
         <ul class="nav__list">
           <li class="nav__item"><a href="#" class="nav__link">Shop</a></li>
           <li class="nav__item">
@@ -124,26 +144,42 @@
         </div>
       </section>
 
-      <section class="collection section">
+      <section class="signature-collection section">
         <div class="container">
           <header class="section__header">
-            <h2 class="section__title">Our Signature Collection</h2>
-            <a href="#" class="section__link">View All</a>
+            <div class="section__header--image">
+              <img src="assets/images/twemoji_feather@2x.png" alt="a feather" class="section--icon">
+            </div>
+            <div class="section__header--text">
+              <h2 class="section__title">Our Signature Collection</h2>
+              <button class="btn btn--tertiary">
+                <div class="btn--text">
+                  See more
+                  <div class="btn--line"></div>
+                </div>
+
+                <svg class="btn--icon">
+                  <use href="#icon-arrow-up-right"></use>
+                </svg>
+              </button>
+            </div>
           </header>
 
           <div class="product-slider">
             <article class="product-card">
               <div class="product-card__image-wrapper">
                 <img
-                  src="hair-sample.jpg"
+                  src="assets/images/signatureCollection.png"
                   alt="Raw Virgin Hair"
                   class="product-card__image"
                 />
               </div>
-              <h3 class="product-card__name">Raw & Virgin Hair</h3>
-              <p class="product-card__desc">
-                Ethically sourced, high-quality textures.
-              </p>
+              <div class="product-card__details">
+                <h3 class="product-card__name">Raw & Virgin Hair</h3>
+                <p class="product-card__desc">
+                  Ethically sourced, unprocessed and built to last.
+                </p>
+              </div>
             </article>
           </div>
         </div>
