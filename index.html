@@ -1,211 +1,240 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MJ Hair Place | Crafted for Confidence</title>
-    <link rel="stylesheet" href="styles/general.css">
-    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/index.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
+    <!-- SVG SPRITE -->
+    <svg style="display: none" xmlns="http://www.w3.org/2000/svg">
+      <symbol
+        id="icon-arrow-down-right"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        viewBox="0 0 24 24"
+      >
+        <line x1="7" y1="7" x2="17" y2="17"></line>
+        <polyline points="17 7 17 17 7 17"></polyline>
+      </symbol>
 
-  <!-- SVG SPRITE -->
-  <svg style="display: none;" xmlns="http://www.w3.org/2000/svg">
+      <symbol
+        id="icon-arrow-up-right"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        viewBox="0 0 24 24"
+      >
+        <line x1="7" y1="17" x2="17" y2="7"></line>
+        <polyline points="7 7 17 7 17 17"></polyline>
+      </symbol>
+    </svg>
 
-    <symbol id="icon-arrow-down-right" fill="none" stroke="currentColor"
-      stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-      viewBox="0 0 24 24">
-      <line x1="7" y1="7" x2="17" y2="17"></line>
-      <polyline points="17 7 17 17 7 17"></polyline>
-    </symbol>
-
-    <symbol id="icon-arrow-up-right" fill="none" stroke="currentColor"
-      stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-      viewBox="0 0 24 24">
-      <line x1="7" y1="17" x2="17" y2="7"></line>
-      <polyline points="7 7 17 7 17 17"></polyline>
-    </symbol>
-
-  </svg>
-
-  <header class="header">
+    <header class="header">
       <nav class="nav container">
-          <div class="nav__logo">MJ HAIR PLACE</div>
-          <ul class="nav__list">
-              <li class="nav__item"><a href="#" class="nav__link">Shop</a></li>
-              <li class="nav__item"><a href="#" class="nav__link">Collection</a></li>
-              <li class="nav__item"><a href="#" class="nav__link">Consultation</a></li>
-              <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
-          </ul>
+        <div class="nav__logo">MJ HAIR PLACE</div>
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#" class="nav__link">Shop</a></li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Collection</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Consultation</a>
+          </li>
+          <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+        </ul>
       </nav>
-  </header>
+    </header>
 
-  <main>
-
+    <main>
       <section class="hero">
+        <img src="assets/images/Hero.png" alt="" class="hero__image">
+        <div class="hero__content container">
+          <div class="hero__content--text">
+            <h1 class="hero__title">
+              CRAFTED FOR <br />
+              WOMEN WHO WEAR <br />
+              CONFIDENCE
+            </h1>
+            <p class="hero__subtitle">
+              Premium luxury wigs and expert hair care products designed to
+              elevate your everyday look.
+            </p>
+          </div>
 
-          <div class="hero__content container">
-            <div class="hero__content--text">
-              <h1 class="hero__title">CRAFTED FOR <br> WOMEN WHO WEAR <br> CONFIDENCE</h1>
-              <p class="hero__subtitle">
-                Premium luxury wigs and expert hair care products designed to elevate your everyday look.
-              </p>
+          <div class="hero__actions">
+            <div class="hero__buttons">
+              <button class="btn btn--primary">
+                <div class="btn--text">
+                  Shop The Collection
+                  <div class="btn--line"></div>
+                </div>
+
+                <svg class="btn--icon">
+                  <use href="#icon-arrow-down-right"></use>
+                </svg>
+              </button>
+
+              <button class="btn btn--secondary">
+                <div class="btn--text">
+                  Explore Our Story
+                  <div class="btn--line"></div>
+                </div>
+
+                <svg class="btn--icon">
+                  <use href="#icon-arrow-up-right"></use>
+                </svg>
+              </button>
             </div>
 
-              <div class="hero__actions">
+            <div class="hero__featured--collection">
+              <p class="hero__featured--item">Curly Hair 22"</p>
 
-                <div class="hero__buttons">
+              <div class="hero__collection">
+                <p class="hero__collection--name">Realsam Collection</p>
 
-                  <button class="btn btn--primary">
-                    <div class="btn--text">
-                      Shop The Collection
-                      <div class="btn--line"></div>
-                    </div>
-
-                    <svg class="btn--icon">
-                      <use href="#icon-arrow-down-right"></use>
-                    </svg>
-                  </button>
-
-                  <button class="btn btn--secondary">
-                    <div class="btn--text">
-                      Explore Our Story
-                      <div class="btn--line"></div>
-                    </div>
-
-                    <svg class="btn--icon">
-                      <use href="#icon-arrow-up-right"></use>
-                    </svg>
-                  </button>
-
-                </div>
-
-                <div class="hero__featured--collection">
-                  <p class="hero__featured--item">Curly Hair 22"</p>
-
-                  <div class="hero__collection">
-                    <p class="hero__collection--name">Realsam Collection</p>
-
-                    <button class="btn btn--tertiary">
-                      <div class="btn--text">
-                        See more
-                        <div class="btn--line"></div>
-                      </div>
-
-                      <svg class="btn--icon">
-                        <use href="#icon-arrow-up-right"></use>
-                      </svg>
-                    </button>
-
+                <button class="btn btn--tertiary">
+                  <div class="btn--text">
+                    See more
+                    <div class="btn--line"></div>
                   </div>
 
-                </div>
-
+                  <svg class="btn--icon">
+                    <use href="#icon-arrow-up-right"></use>
+                  </svg>
+                </button>
               </div>
-
+            </div>
           </div>
+        </div>
       </section>
 
       <section class="collection section">
-          <div class="container">
-              <header class="section__header">
-                  <h2 class="section__title">Our Signature Collection</h2>
-                  <a href="#" class="section__link">View All</a>
-              </header>
+        <div class="container">
+          <header class="section__header">
+            <h2 class="section__title">Our Signature Collection</h2>
+            <a href="#" class="section__link">View All</a>
+          </header>
 
-              <div class="product-slider">
-                  <article class="product-card">
-                      <div class="product-card__image-wrapper">
-                          <img src="hair-sample.jpg" alt="Raw Virgin Hair" class="product-card__image">
-                      </div>
-                      <h3 class="product-card__name">Raw & Virgin Hair</h3>
-                      <p class="product-card__desc">Ethically sourced, high-quality textures.</p>
-                  </article>
+          <div class="product-slider">
+            <article class="product-card">
+              <div class="product-card__image-wrapper">
+                <img
+                  src="hair-sample.jpg"
+                  alt="Raw Virgin Hair"
+                  class="product-card__image"
+                />
               </div>
+              <h3 class="product-card__name">Raw & Virgin Hair</h3>
+              <p class="product-card__desc">
+                Ethically sourced, high-quality textures.
+              </p>
+            </article>
           </div>
+        </div>
       </section>
 
       <section class="features section bg-light">
-          <div class="container">
-              <h2 class="section__title text-center">The MJ Difference</h2>
+        <div class="container">
+          <h2 class="section__title text-center">The MJ Difference</h2>
 
-              <div class="features__grid">
-                  <div class="feature-item feature-item--large">
-                      <h3 class="feature-item__number">01</h3>
-                      <h4 class="feature-item__title">Uncompromising Quality</h4>
-                      <p class="feature-item__text">Description goes here...</p>
-                  </div>
+          <div class="features__grid">
+            <div class="feature-item feature-item--large">
+              <h3 class="feature-item__number">01</h3>
+              <h4 class="feature-item__title">Uncompromising Quality</h4>
+              <p class="feature-item__text">Description goes here...</p>
+            </div>
 
-                  <div class="feature-item feature-item--accent">
-                      <h3 class="feature-item__number">02</h3>
-                      <h4 class="feature-item__title">Luxury Craftsmanship</h4>
-                      <p class="feature-item__text">Description goes here...</p>
-                  </div>
+            <div class="feature-item feature-item--accent">
+              <h3 class="feature-item__number">02</h3>
+              <h4 class="feature-item__title">Luxury Craftsmanship</h4>
+              <p class="feature-item__text">Description goes here...</p>
+            </div>
 
-                  <div class="feature-item feature-item--dark">
-                      <h3 class="feature-item__number">03</h3>
-                      <h4 class="feature-item__title">Expert Care Solutions</h4>
-                      <p class="feature-item__text">Description goes here...</p>
-                  </div>
-              </div>
+            <div class="feature-item feature-item--dark">
+              <h3 class="feature-item__number">03</h3>
+              <h4 class="feature-item__title">Expert Care Solutions</h4>
+              <p class="feature-item__text">Description goes here...</p>
+            </div>
           </div>
+        </div>
       </section>
 
       <section class="gallery section">
-          <div class="container">
-              <h2 class="section__title text-center">Maintenance & Care Products</h2>
+        <div class="container">
+          <h2 class="section__title text-center">
+            Maintenance & Care Products
+          </h2>
 
-              <div class="gallery__grid">
-                  <div class="gallery__item"><img src="prod1.jpg" alt="Care Product"></div>
-                  <div class="gallery__item"><img src="prod2.jpg" alt="Care Product"></div>
-              </div>
+          <div class="gallery__grid">
+            <div class="gallery__item">
+              <img src="prod1.jpg" alt="Care Product" />
+            </div>
+            <div class="gallery__item">
+              <img src="prod2.jpg" alt="Care Product" />
+            </div>
           </div>
+        </div>
       </section>
 
       <section class="guide section">
-          <div class="container">
-              <h2 class="section__title">Let's Help You Find Your Wave</h2>
+        <div class="container">
+          <h2 class="section__title">Let's Help You Find Your Wave</h2>
 
-              <div class="guide__steps">
-                  <div class="step">
-                      <span class="step__index">01</span>
-                      <h5 class="step__title">Book an Appointment</h5>
-                  </div>
-              </div>
+          <div class="guide__steps">
+            <div class="step">
+              <span class="step__index">01</span>
+              <h5 class="step__title">Book an Appointment</h5>
+            </div>
           </div>
+        </div>
       </section>
+    </main>
 
-  </main>
-
-  <footer class="footer">
+    <footer class="footer">
       <div class="footer__content container">
-          <div class="footer__column">
-              <h5 class="footer__title">Explore</h5>
-              <ul class="footer__list">
-                  <li><a href="#">FAQ</a></li>
-                  <li><a href="#">Shipping</a></li>
-              </ul>
-          </div>
+        <div class="footer__column">
+          <h5 class="footer__title">Explore</h5>
+          <ul class="footer__list">
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Shipping</a></li>
+          </ul>
+        </div>
 
-          <div class="footer__newsletter">
-              <h5 class="footer__title">Latest From MJ</h5>
-              <form class="newsletter-form">
-                  <input type="email" placeholder="Your email address" class="newsletter-form__input">
-                  <button type="submit" class="newsletter-form__submit">→</button>
-              </form>
-          </div>
+        <div class="footer__newsletter">
+          <h5 class="footer__title">Latest From MJ</h5>
+          <form class="newsletter-form">
+            <input
+              type="email"
+              placeholder="Your email address"
+              class="newsletter-form__input"
+            />
+            <button type="submit" class="newsletter-form__submit">→</button>
+          </form>
+        </div>
       </div>
 
       <div class="footer__bottom container">
-          <div class="footer__logo-signature">MJ Hair Place</div>
-          <p class="footer__copyright">&copy; 2026 MJ Hair Place. All rights reserved.</p>
+        <div class="footer__logo-signature">MJ Hair Place</div>
+        <p class="footer__copyright">
+          &copy; 2026 MJ Hair Place. All rights reserved.
+        </p>
       </div>
-  </footer>
-
-</body>
+    </footer>
+  </body>
 </html>

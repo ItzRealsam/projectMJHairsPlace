@@ -167,7 +167,7 @@ h6 {
   color: rgb(var(--color__content--1));
   text-transform: uppercase;
   font-family: var(--font__sans);
-  font-size: 1.6rem;
+  font-size: clamp(1.2rem, 5vw, 1.6rem);
 }
 
 .btn--text {
