@@ -45,7 +45,6 @@
   z-index: 0;
 }
 
-
 /* === HERO CONTENT === */
 .hero__content {
   display: flex;
@@ -117,6 +116,11 @@
 
   .hero__content {
     padding: 6.4rem 4.8rem;
+  }
+
+  .hero__content--text {
+    justify-content: end;
+    gap: 2em;
   }
 }
 
