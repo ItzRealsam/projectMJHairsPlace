@@ -13,6 +13,8 @@
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap"
       rel="stylesheet"
     />
+
+    <script defer src="scripts/index.js"></script>
   </head>
 
   <body>
@@ -56,9 +58,20 @@
         <line x1="3" y1="12" x2="21" y2="12"></line>
         <line x1="3" y1="18" x2="21" y2="18"></line>
       </symbol>
+
+      <symbol id="icon-chevron-right" 
+        fill="none" 
+        stroke="currentColor"
+        stroke-width="2" 
+        stroke-linecap="round" 
+        stroke-linejoin="round"
+        viewBox="0 0 24 24">
+
+        <polyline points="9 18 15 12 9 6"></polyline>
+      </symbol>
     </svg>
 
-    <header class="header">
+    <header class="header" id="header">
       <nav class="nav container">
         <div class="nav__brand">
           <div class="nav__logo">MJ HAIR PLACE</div>
@@ -144,7 +157,7 @@
         </div>
       </section>
 
-      <section class="signature-collection section">
+      <section class="signature-collection section changeHeader">
         <div class="container">
           <header class="section__header">
             <div class="section__header--image">
@@ -185,7 +198,7 @@
         </div>
       </section>
 
-      <section class="features section bg-light">
+      <section class="features section changeHeader">
         <div class="container">
           <h2 class="section__title text-center">The MJ Difference</h2>
 
@@ -211,7 +224,7 @@
         </div>
       </section>
 
-      <section class="gallery section">
+      <section class="gallery section changeHeader">
         <div class="container">
           <h2 class="section__title text-center">
             Maintenance & Care Products
@@ -228,7 +241,7 @@
         </div>
       </section>
 
-      <section class="guide section">
+      <section class="guide section changeHeader">
         <div class="container">
           <h2 class="section__title">Let's Help You Find Your Wave</h2>
 
@@ -244,29 +257,64 @@
 
     <footer class="footer">
       <div class="footer__content container">
-        <div class="footer__column">
-          <h5 class="footer__title">Explore</h5>
-          <ul class="footer__list">
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Shipping</a></li>
-          </ul>
+        <div class="footer__columns">
+          <div class="footer__column">
+            <h5 class="footer__title">Explore</h5>
+            <ul class="footer__list">
+              <li><a href="#" class="footer__link">Home</a></li>
+              <li><a href="#" class="footer__link">About</a></li>
+              <li><a href="#" class="footer__link">Collection</a></li>
+              <li><a href="#" class="footer__link">Consult</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__column">
+            <h5 class="footer__title">Company</h5>
+            <ul class="footer__list">
+              <li><a href="#" class="footer__link">Contact</a></li>
+              <li><a href="#" class="footer__link">Faq</a></li>
+              <li><a href="#" class="footer__link">Privacy Policy</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__column">
+            <h5 class="footer__title">Follow Us</h5>
+            <ul class="footer__list">
+              <li><a href="#" class="footer__link">Instagram</a></li>
+              <li><a href="#" class="footer__link">Facebook</a></li>
+              <li><a href="#" class="footer__link">Pinterest</a></li>
+            </ul>
+          </div>
         </div>
 
         <div class="footer__newsletter">
-          <h5 class="footer__title">Latest From MJ</h5>
-          <form class="newsletter-form">
-            <input
-              type="email"
-              placeholder="Your email address"
-              class="newsletter-form__input"
-            />
-            <button type="submit" class="newsletter-form__submit">→</button>
-          </form>
+          <div class="newsletter__contents">
+            <h5 class="footer__title">Letters From MJ</h5>
+            <p class="newsletter-desc">
+              Subscribe to hear about new products, stories, hair extensions
+              tips and much more. No spam - only lovely letters.
+            </p>
+            <form class="newsletter-form">
+              <input
+                type="email"
+                placeholder="Type your email"
+                class="newsletter-form__input"
+              />
+              <button type="submit" class="newsletter-form__submit">
+                <svg class="btn--icon">
+                  <use href="#icon-chevron-right"></use>
+                </svg>
+              </button>
+            </form>
+            <div class="footer__logo-signature__wrapper">
+              <img src="assets/images/signature_MJhair@2x.png" 
+                alt="MJ Hair Signature" class="footer__logo-signature">
+            </div>
+          </div>
         </div>
       </div>
 
       <div class="footer__bottom container">
-        <div class="footer__logo-signature">MJ Hair Place</div>
         <p class="footer__copyright">
           &copy; 2026 MJ Hair Place. All rights reserved.
         </p>
