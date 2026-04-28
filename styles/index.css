@@ -209,11 +209,13 @@
 }
 
 .signature-collection .product-card__image {
-  width: 70%;
+  width: 100%;
+  max-width: 96rem;
 }
 
 .product-card__details {
-  width: 70%;
+  width: 100%;
+  max-width: 96rem;
   display: flex;
   flex-direction: column;
   gap: .8rem;
