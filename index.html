@@ -46,6 +46,19 @@
         <polyline points="7 7 17 7 17 17"></polyline>
       </symbol>
 
+      <symbol
+        id="icon-arrow-right"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        viewBox="0 0 24 24"
+      >
+        <line x1="5" y1="12" x2="19" y2="12"></line>
+        <polyline points="12 5 19 12 12 19"></polyline>
+      </symbol>
+
       <symbol id="icon-menu" 
         fill="none" 
         stroke="currentColor"
@@ -172,7 +185,7 @@
                 </div>
 
                 <svg class="btn--icon">
-                  <use href="#icon-arrow-up-right"></use>
+                  <use href="#icon-arrow-right"></use>
                 </svg>
               </button>
             </div>
@@ -186,12 +199,12 @@
                   alt="Raw Virgin Hair"
                   class="product-card__image"
                 />
-              </div>
-              <div class="product-card__details">
-                <h3 class="product-card__name">Raw & Virgin Hair</h3>
-                <p class="product-card__desc">
-                  Ethically sourced, unprocessed and built to last.
-                </p>
+                <div class="product-card__details">
+                  <h3 class="product-card__name">Raw & Virgin Hair</h3>
+                  <p class="product-card__desc">
+                    Ethically sourced, unprocessed and built to last.
+                  </p>
+                </div>
               </div>
             </article>
           </div>
@@ -243,14 +256,81 @@
 
       <section class="guide section changeHeader">
         <div class="container">
-          <h2 class="section__title">Let's Help You Find Your Wave</h2>
+          <header class="section__header">
+            <div class="section__header--image">
+              <img src="assets/images/twemoji_hair-pick@2x.png" alt="a hair pick" class="section--icon">
+            </div>
+            <div class="section__header--text">
+              <h2 class="section__title">Let's Help You Find Your Wave</h2>
+              <!-- <button class="btn btn--tertiary">
+                <div class="btn--text">
+                  See more
+                  <div class="btn--line"></div>
+                </div>
+
+                <svg class="btn--icon">
+                  <use href="#icon-arrow-up-right"></use>
+                </svg>
+              </button> -->
+            </div>
+          </header>
+
+          <div class="product-card__image-wrapper">
+            <img
+              src="assets/images/unsplash_VFZF_pzTVBA.png"
+              alt="Female flaunting hair"
+              class="product-card__image"
+            />
+          </div>
 
           <div class="guide__steps">
             <div class="step">
-              <span class="step__index">01</span>
+              <h3 class="step__index">01</h3>
               <h5 class="step__title">Book an Appointment</h5>
+              <p class="step__desc">
+                It's easy, free and online! Caviar team member 
+                helps you to select the best option exactly for 
+                your wants and needs.
+              </p>
+            </div>
+            <div class="step">
+              <h3 class="step__index">02</h3>
+              <h5 class="step__title">Send Us Your Head Measurements</h5>
+              <p class="step__desc">
+                Follow our simple video instructions and send
+                us your head measurements to help us tailor 
+                the product exclusively for you.
+              </p>
+            </div>
+            <div class="step">
+              <h3 class="step__index">03</h3>
+              <h5 class="step__title">Customization and Development Time</h5>
+              <p class="step__desc">
+                The average time between placing an order 
+                to getting the order ranges anywhere from 2-4 weeks.
+              </p>
+            </div>
+            <div class="step">
+              <h3 class="step__index">04</h3>
+              <h5 class="step__title">Shipment To Your Doorstep</h5>
+              <p class="step__desc">
+                As soon as we have confirmed your purchase, 
+                your one-of-a-kind Slavic treasure will de be 
+                shipped directly to your preferred address.
+              </p>
             </div>
           </div>
+
+          <button class="btn btn--primary">
+            <div class="btn--text">
+              Book an Appointment
+              <div class="btn--line"></div>
+            </div>
+
+            <svg class="btn--icon">
+              <use href="#icon-arrow-right"></use>
+            </svg>
+          </button>
         </div>
       </section>
     </main>

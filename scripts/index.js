@@ -1,3 +1,4 @@
+// == CHANGE HEADER BG == 
 const header = document.querySelector(".header");
 const sections = document.querySelectorAll(".changeHeader");
 
@@ -23,3 +24,11 @@ window.addEventListener("resize", updateHeader);
 
 // run once on load
 updateHeader();
+
+// == NAV_LIST ==
+const toggleBtn = document.querySelector('.nav__menu');
+const navList = document.querySelector('.nav__list');
+
+toggleBtn.addEventListener('click', () => {
+  navList.classList.toggle('active');
+});

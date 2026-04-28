@@ -63,6 +63,48 @@ img {
   padding: clamp(6.4rem, 8vw, 12rem) 0;
 }
 
+.section .container {
+  width: 100%;
+  max-width: var(--container-max-width);
+
+  display: flex;
+  flex-direction: column;
+  gap: clamp(3.2rem, 5vw, 6.4rem);
+}
+
+.section__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4.8rem;
+}
+
+.section__header--text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+}
+
+.section__header--text .btn {
+  margin-left: auto;
+}
+
+.section__title {
+  color: rgb(var(--color__primary--1));
+}
+
+.section__header .btn {
+  color: rgb(var(--color__content--2));
+  min-width: 12rem;
+}
+
+.section--icon {
+  width: 4.8rem;
+  height: 4.8rem;
+}
+
 /* === TYPOGRAPHY === */
 h1, h2, h3, h6 {
   font-optical-sizing: auto;
@@ -122,7 +164,7 @@ h5 {
 }
 
 .header.changeHeaderBG {
-  background: rgba(var(--color__bg--1) 0.75);
+  background: rgba(var(--color__bg--2), 0.75);
 }
 
 .nav {
@@ -174,12 +216,13 @@ h5 {
 }
 
 /* NAV LINK COLOR ON SCROLL === */
+/*
 .header.changeHeaderBG .nav__link,
 .header.changeHeaderBG .nav__logo,
 .header.changeHeaderBG .nav__menu--icon  {
   color: rgba(var(--color__content--2));
 }
-
+*/
 @media (max-width: 1024px) {
   .nav {
     padding: 0.8rem 4.8rem;
@@ -189,16 +232,37 @@ h5 {
 @media (max-width: 768px) {
   .nav {
     padding: 0.8rem 3.2rem;
-  }
-
-  .nav__list {
-    display: none;
-    gap: 2rem;
-  }
-  
+    flex-direction: column;
+  }  
   .nav__menu {
     display: flex;
   }
+
+  .nav__list {
+    position: absolute;
+    margin: 0;
+    top: 6.4rem;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 2.4rem;
+    padding: 3.2rem;
+
+    background: rgba(var(--color__bg--2), 0.5);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+
+    transform: translateX(100%);
+    transition: all 0.3s ease;
+  }
+
+  .nav__list.active {
+    transform: translateX(0);
+  }
+
+  .nav__brand {
+    height: 6.4rem;
+  } 
 }
 
 /* === BUTTONS === */
@@ -210,8 +274,32 @@ h5 {
   text-transform: uppercase;
   font-family: var(--font__sans);
   font-size: clamp(1.2rem, 5vw, 1.6rem);
+  padding: clamp(.8rem, 5vw, 1.6rem) 0;
+  align-items: center;
 }
 
+.btn--text {
+  position: relative;
+  display: inline-block;
+}
+
+.btn--line {
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+
+  width: 100%;
+  height: 2px;
+  background-color: currentColor;
+
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.btn:hover .btn--line {
+  transform: scaleX(1);
+}
 
 .btn--primary {
   font-weight: 600;
@@ -221,22 +309,16 @@ h5 {
   opacity: 0.7;
 }
 
-.btn--text {
-  display: flex;
-  flex-direction: column;
-  gap: .4rem;
-}
-
-.btn--line {
+/*.btn--line {
   width: 100%;
   height: .1rem;
   background: rgb(var(--color__content--1));
-}
+} */
 
-.btn--secondary .btn--line,
+/* .btn--secondary .btn--line,
 .btn--tertiary .btn--line {
   display: none;
-}
+} */
 
 /* === SVG === */
 .btn--icon {
